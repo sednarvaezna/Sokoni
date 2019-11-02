@@ -1,0 +1,10 @@
+Estilos de fuente:
+
+LOGOTIO:
+  MARK BLACK
+
+TITULOS:
+  MARK HEAVY
+
+CUERPOS DE TEXTO:
+  Avenir Book
