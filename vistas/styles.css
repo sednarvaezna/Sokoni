@@ -1,0 +1,58 @@
+
+/*"Clase"
+    .nav-bar{
+        color:red
+    }
+
+ "ID"
+    #but{
+        color:red
+    }
+*/
+/*
+// Obtener variable desde cualquier lugar
+getComputedStyle(element).getPropertyValue("--my-var");
+*/
+
+/* Las variables deben declararse dentro de un selector
+   Se acostumbra usar :root para que la variable sea global 
+   Se declaran con dos guiones y el nombre
+   Para utilizarlas se usa la funcion var() y entre
+   los paréntesis se escribe el nombre de la variable
+
+*/
+:root 
+{
+    --NombreEmpresa: 'My-Place';
+    --DominioEmpresa: 'my-place.com.co';
+    --ColorOscuroDegradado: #3069b3;
+    --ColorClaroDegradado: #0089CF;
+    --ColorTextoMarca:#FFFFFF;
+}
+
+  
+/*Clase para el Header*/
+.navbar
+{
+  background-color: var(--ColorOscuroDegradado);
+    /* Safari 4+ y Google Chrome 1+ */  
+        background-image: linear-gradient(to right, var(--ColorOscuroDegradado), var(--ColorClaroDegradado) );
+        
+    /* Safari 5+ y Google Chrome 10+ */  
+        background-image:-webkit-linear-gradient(to right, var(--ColorOscuroDegradado), var(--ColorClaroDegradado) );  
+
+    /* Firefox 3.6+ */  
+        background-image:-moz-linear-gradient(to right, var(--ColorOscuroDegradado), var(--ColorClaroDegradado) );  
+
+    /* Opera 11.1+ */  
+        background-image:-o-linear-gradient(to right, var(--ColorOscuroDegradado), var(--ColorClaroDegradado) );   
+    
+    /* Internet Explorer 6 y 7 */  
+        filter: progid:DXImageTransform.Microsoft.gradient(to right,startColorstr=var(--ColorOscuroDegradado), endColorstr=var(--ColorClaroDegradado)); /* IE6 & IE7 */ 
+   
+    /* Internet Explorer 8 y 9, el gradientType='1' significa degradado horizontal, para cambiar a vertical poner '0'*/    
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=(--ColorOscuroDegradado), endColorstr=var(--ColorClaroDegradado), gradientType='1')";
+
+    /* Internet Explorer 10+ */  
+        background: -ms-linear-gradient(to right, var(--ColorOscuroDegradado), var(--ColorClaroDegradado) ); 
+}
