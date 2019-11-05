@@ -27,6 +27,9 @@
 * {
   font-family: "Avenir-Book";
   font-size: 105%;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 1px;
 }
 .topmargin-xs{margin-top: 15px;}
 .topmargin-sm{margin-top: 30px;}
@@ -151,4 +154,38 @@ label img {
 }
 #footer .list-inline .list-inline-item {
   padding: 10px 15px;
+}
+
+/* Estilos de la vista filtros */
+aside{
+    max-width: 600px;
+    min-width: 100px;
+    height: 500px;
+    float: right;
+    background: white;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center; /*esta opcion es solo para el titulo VIVIENDAS no para los resultados que arroje la busqueda */
+
+}
+
+#FILTROS {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-width: 100px;
+  height: 500px;
+  background: #0089CF;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.container-sin-margen {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.btn-group {
+  margin-left: 0px;
+  max-width: 40px;
 }
