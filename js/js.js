@@ -14,10 +14,10 @@ import { Options } from 'ng5-slider';
   styleUrls: [ './app.component.scss' ]
 })
 export class AppComponent  {
-  value: number = 10;
-  highValue: number = 1000;
+  value: number = 40;
+  highValue: number = 60;
   options: Options = {
     floor: 0,
-    ceil: 100
+    ceil: 1000000
   };
 }
