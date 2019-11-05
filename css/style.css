@@ -33,21 +33,13 @@
 .topmargin-lg{margin-top: 60px;}
 
 .rightmargin-sm{margin-right: 40px;}
-/*.container{
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}*/
+
 .navbar {
-  background-color: rgb(111, 84, 161);
+  background-color: #2DC3E4;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
   min-height: 100px;
 }
-.nav-link {color: #000000; }
+.nav-link {color: #ffffff; }
 .nav-link:hover {color: rgb(74, 68, 72); }
 .logo-brand {
   min-width: 160px;
@@ -66,26 +58,10 @@
   max-width: 100%;
   height: 600px;
 }
-/* .container-img {
-  max-width: 100%;
-  height: 200px;
-  margin-bottom: 1px;
-  margin-top: 1px;
-} */
+
 .col img {
   border-radius: 2px;
   border: solid #000000 2px;
-  max-width: 100%;
-  height: 300px;
-}
-.col form-check-label img {
-  border-radius: 2px;
-  border: solid #000000 2px;
-  max-width: 100%;
-  height: 300px;
-}
-/* https://stackoverflow.com/questions/30663562/use-images-like-checkboxes Revisar esta página*/
-.form-check img {
   max-width: 100%;
   height: 300px;
 }
@@ -150,14 +126,16 @@ label img {
   z-index: -1;
   border-radius: 50%;
 }
-.btn-success {
-  margin-top: 30px;
+#submit-button-home {
+  display: flex;
+  flex-direction: row-reverse;
+  /* margin-top: 30px;
   margin-bottom: 30px;
-  margin-right: 10px;
-  margin-left: 900px;
+  margin-right: 5%;
+  margin-left: 900px; */
 }
 .bg-company {
-  background-color: rgb(46, 171, 199) !important;
+  background-color: #2DC3E4 !important;
 }
 
 #footer {
