@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 1px;
+}
+body{
+    background: white;
+    color: white;
+}
+/*------------------estilos del header*/
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.logo, .icon-menu{
+    margin: 5px;
+}
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #0089CF;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*------------------estilos del menu*/
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link{
+    display: block;
+    padding: 15px;
+    background: #0089CF;
+    text-decoration: none;
+    color: white;
+}
+.menu__link:hover, .select {
+    background: white;
+    color:#0089CF ;
+}
+.mostrar {
+    left: 0;
+}
+
+
+#contenedor{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1200px;
+    height: 800px;
+    background-color:white ;
+}
+#FILTROS {
+    width: 300px;
+    height: 500px;
+    float: left;
+    background: #0089CF;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+aside{
+    width: 1000px; 
+    height: 500px;
+    float: right;
+    background: white;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center; esta opcion es solo para el titulo VIVIENDAS no para los resultados que arroje la busqueda
+
+}
+
+footer, p{
+    background: #0089CF;
+    clear: both;
+    text-align: center;
+    
+}
+
+
