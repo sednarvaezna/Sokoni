@@ -2,19 +2,22 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>MYPLACE</title>
+  <title>MyPlace</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <link rel="stylesheet" href="../css/cssFiltros.css"> -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <div> <a href="https://www.flaticon.es/autores/freepik" title="Freepik"></a> <a href="https://www.flaticon.es/"     title="Flaticon"></a></div>
+  <link rel="icon" type="image/png" href="../img/LOGO-MYPLACE.svg">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <!--  encabezado o barra de navegacion -->
+
   <header class="header">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-company">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="../img/LOGO-MYPLACE.svg" class="logo-brand" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,13 +37,13 @@
     </nav>
   </header> <!-- fin  encabezado o barra de navegacion -->
 
-  <div class="container-sin-margen">
+  <div class="container-without-margen">
     <div class="row">
       <div class="col-3">
         <section id="FILTROS">
-        <h2>FILTROS</h2>
-        <!-- <br> <br> <br> -->
+        <!-- seccion de filtros -->
         <div class="btn-group topmargin-sm">
+          <!-- menu desprendible ciudades -->
           <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             ciudad
           </button>
@@ -51,33 +54,49 @@
             <button class="dropdown-item" type="button">Cartagena</button>
           </div>
         </div>
-        <!-- <br> <br> <br> -->
-        <div class="btn-group topmargin-sm">
-    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Zona
-    </button>
-    <div class="dropdown-menu dropdown-menu-right">
-        <button class="dropdown-item" type="button">Campestre</button>
-        <button class="dropdown-item" type="button">Sur No Vis</button>
-        <button class="dropdown-item" type="button">Norte No Vis</button>
-        <button class="dropdown-item" type="button">Oriente No Vis</button>
-    </div>
-</div>
-<!-- <br> <br> <br> -->
-        <label for="customRange2 topmargin-sm">Precio</label>
-        <ng5-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ng5-slider>
-        <!-- <br> <br> <br> -->
-        <label for="customRange2">Metros cuadrados</label>
-        <ng5-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ng5-slider>
-        <!-- <br> <br> <br> -->
-        <a class="btn btn-primary" href="#" role="button">Buscar</a>
+
+<!-- seccion de los rangos 6-nov -->
+<h6>Tamaño del lugar</h6>
+<ng5-slider [(value)]="40" [(highValue)]="200" [options]="options"></ng5-slider>
+<!-- <div class="price-slider"><span>minimo
+  <input type="number" value="5000" min="0" max="120000"> maximo
+  <input type="number" value="50000" min="0" max="120000"></span>
+  <input value="25000" min="0" max="120000" step="500" type="range"/>
+  <input value="50000" min="0" max="120000" step="500" type="range"/>
+  <svg width="100%" height="24">
+    <line x1="4" y1="0" x2="300" y2="0" stroke="212121" stroke-width="12" stroke-dasharray="1 28"></line>
+  </svg>
+</div> -->
+
+<h6>Rango de precio</h6>
+  <ng5-slider [(value)]="0" [(highValue)]="250" [options]="options"></ng5-slider>
+
+<!-- seccion de los rangos -->
+        <a class="btn btn-primary" href="#" role="button">Encuentra tu vivienda</a>
         </section>
       </div>
       <div class="col">
-        <H2>VIVIENDAS</H2>
+        <H2>Señala las que te gustan</H2>
+
+        <a class="btn btn-primary" href="#" role="button">Quiero estas</a>
+
       </div>
     </div>
   </div>
+
+
+<!--
+    <div class="container topmargin-sm">
+    <div id='id66' class="range">
+      <div id='id66b' class='range__between'></div>
+        <button id='id661' class="range__button_1"></button>
+        <button id='id662' class="range__button_2"></button>
+        <input id='id66i1' class='range_inpt1' type='number' min='20' max='700'>
+        <input id='id66i2' class='range_inpt2' type='number' min='20' max='700'>
+    </div>
+
+  </div>
+<script type="text/javascript" src="../js/jstest.js" ></script> -->
 
 
 
@@ -102,6 +121,6 @@
       <small>©2019 All Rights Reserved. Created by MyPlace</small>
     </div>
   </section>
-  <script src="js/js.js" ></script>
+
 </body>
 </html>
