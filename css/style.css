@@ -1,5 +1,19 @@
 /* font converted using font-converter.net. thank you! */
 /*https://www.youtube.com/watch?v=FMtXsp6WRrw*/
+/* Las variables deben declararse dentro de un selector
+   Se acostumbra usar :root para que la variable sea global
+   Se declaran con dos guiones y el nombre
+   Para utilizarlas se usa la funcion var() y entre
+   los paréntesis se escribe el nombre de la variable
+*/
+
+:root {
+    --NombreEmpresa: 'My-Place';
+    --DominioEmpresa: 'my-place.com.co';
+    --ColorOscuroDegradado: #3069b3;
+    --ColorClaroDegradado: #0089CF;
+    --ColorTextoMarca:#FFFFFF;
+}
 @font-face {
   font-family: "Avenir-Book";
   src: url("./fonts/AvenirBook.eot"); /* IE9 Compat Modes */
@@ -36,9 +50,14 @@
 .topmargin-lg{margin-top: 60px;}
 
 .rightmargin-sm{margin-right: 40px;}
-
+.bg-company {
+  /* background-color: #2DC3E4 !important; */
+  background-image:-moz-linear-gradient(to right, var(--ColorOscuroDegradado), var(--ColorClaroDegradado) );
+  background-image: linear-gradient(to right, var(--ColorOscuroDegradado), var(--ColorClaroDegradado) );
+  /* NO hay background general para todos los navegadores*/
+}
 .navbar {
-  background-color: #2DC3E4;
+  /* background-color: #2DC3E4; */
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
   min-height: 100px;
 }
@@ -136,9 +155,6 @@ label img {
   margin-bottom: 30px;
   margin-right: 5%;
   margin-left: 900px; */
-}
-.bg-company {
-  background-color: #2DC3E4 !important;
 }
 
 #footer {
