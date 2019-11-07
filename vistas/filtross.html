@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>MYPLACE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <link rel="stylesheet" href="../css/cssFiltros.css"> -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <div> <a href="https://www.flaticon.es/autores/freepik" title="Freepik"></a> <a href="https://www.flaticon.es/"     title="Flaticon"></a></div>
@@ -54,13 +55,22 @@
 
 <!-- seccion de los rangos 6-nov -->
 <h6>Tamaño del lugar</h6>
-
-<ng5-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ng5-slider>
-
+<div class="price-slider"><span>minimo
+  <input type="number" value="5000" min="0" max="120000"> maximo
+  <input type="number" value="50000" min="0" max="120000"></span>
+  <input value="25000" min="0" max="120000" step="500" type="range"/>
+  <input value="50000" min="0" max="120000" step="500" type="range"/>
+  <svg width="100%" height="24">
+    <line x1="4" y1="0" x2="300" y2="0" stroke="212121" stroke-width="12" stroke-dasharray="1 28"></line>
+  </svg>
+</div>
 
 <h6>Rango de precio</h6>
 
 <h6>Precio/M2 </h6>
+
+<ng5-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ng5-slider>
+
 <!-- seccion de los rangos -->
         <a class="btn btn-primary" href="#" role="button">Encuentra tu vivienda</a>
         </section>
