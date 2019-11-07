@@ -1,69 +1,3 @@
-/*var btnmenu = document.getElementById ("btn-menu")
-var nav  = document.getElementById ("nav")
-
-btnmenu.addEventListener("click", function(){
-    nav.classList.toggle("mostrar")
-})
-
-import { Component } from '@angular/core';
-import { Options } from 'ng5-slider';
-
-@Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.scss' ]
-})
-export class AppComponent  {
-  value: number = 10;
-  highValue: number = 100;
-  options: Options = {
-    floor: 0,
-    ceil: 300
-  };
-}
-
-
-<!-- seccion de los rangos 6-nov -->
-
-function (){
-  var parent = document.querySelector(".price-slider")
-  if(parent) return
-
-  var
-    rangeS = parent.querySelectorAll()
-    numberS = parent.querySelectorAll()
-
-  rangeS.forEach(function(el){
-    el.oninput = function() {
-      var slide1 = parseFloat(rangeS[0].value),
-          slide2 = parseFloat(rangeS[1].value)
-
-      if (slide1 > slide2){
-        [slide1, slide2] = [slide2, slide1]
-      }
-
-      numberS[0].value = slide1
-      numberS[1].value = slide2
-    }
-  })
-
-  numberS.forEach()function(el){
-    el.oninput = function(){
-      var number1 = parseFloat(numberS[0].value),
-          number2 = parseFloat(numberS[1].value)
-
-      if (number1 > number2){
-        var tmp = number1;
-        numberS[0].value = number2
-        numberS[0].value = tmp
-      }
-
-      rangeS[0].value = number1
-      rangeS[1].value = number2
-    }
-  })
-})
-=======
 setTimeout(init2slider('id66', 'id66b', 'id661', 'id662', 'id66i1', 'id66i2'), 0);
 
 function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
@@ -77,6 +11,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
             var min=inpt1.min;
   					var max=inpt1.max;
 
+    /*init*/
     var sliderCoords = getCoords(slider);
     button1.style.marginLeft = '0px';
     button2.style.marginLeft = (slider.offsetWidth-button1.offsetWidth) + 'px';
@@ -152,6 +87,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
               }
     };
 
+    /*mouse*/
     button1.onmousedown = function(evt) {
         var sliderCoords = getCoords(slider);
         var betweenCoords = getCoords(between);
@@ -268,7 +204,7 @@ function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
 
 }
 
-*/
+
 
 
 
