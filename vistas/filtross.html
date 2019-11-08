@@ -39,13 +39,14 @@
 
   <div class="container-without-margen topmargin-sm">
     <div class="row">
-      <div class="col-3 bg-company" id="FILTROS">
+
+      <div class="col-3 bg-company">
+        <section id="FILTROS" >
           <!-- seccion de filtros -->
           <div class="btn-group topmargin-sm">
             <!-- menu desprendible ciudades -->
-            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              ciudad
-            </button>
+            <h6>Ciudad</h6>
+            <button type="button" class="btn btn-primary dropdown-toggle topmargin-sm " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-------------------</button>
             <div class="dropdown-menu dropdown-menu-right">
               <button class="dropdown-item" type="button">Medellin</button>
               <button class="dropdown-item" type="button">Bogota</button>
@@ -53,8 +54,8 @@
               <button class="dropdown-item" type="button">Cartagena</button>
             </div>
           </div>
-
           <!-- seccion de los rangos 6-nov -->
+          <br>
           <h6>Tamaño del lugar</h6>
           <ng5-slider [(value)]="40" [(highValue)]="200" [options]="options"></ng5-slider>
           <!-- <div class="price-slider"><span>minimo
@@ -66,94 +67,92 @@
           <line x1="4" y1="0" x2="300" y2="0" stroke="212121" stroke-width="12" stroke-dasharray="1 28"></line>
         </svg>
       </div> -->
-
+      <br>
       <h6>Rango de precio</h6>
       <ng5-slider [(value)]="0" [(highValue)]="250" [options]="options"></ng5-slider>
-
+      <br>
       <!-- seccion de los rangos -->
       <button class="btn btn-primary" href="#" type="submit">Encuentra tu vivienda</button>
+    </section>
   </div>
   <div class="col">
     <H2>Señala las que te gustan</H2>
-    <section>
-      <div class="container topmargin-sm">
-        <div class="row scroll-container">
-          <div class="col">
-            <div class="form-check topmargin-sm">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck1">
-                <img src="../img/appliances-architecture-ceiling-chairs-534151.jpg" class="d-block w-100 topmargin-sm" alt="categoria1">
-              </label>
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-check topmargin-sm">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-              <label class="form-check-label" for="defaultCheck2">
-                <img src="../img/assorted-color-wall-paint-house-photo-1370704.jpg" class="d-block w-100 topmargin-sm" alt="categoria2">
-              </label>
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-check topmargin-sm">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-              <label class="form-check-label" for="defaultCheck3">
-                <img src="../img/brown-wooden-center-table-584399.jpg" class="d-block w-100 topmargin-sm" alt="categoria3">
-              </label>
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-check topmargin-sm">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-              <label class="form-check-label" for="defaultCheck4">
-                <img src="../img/houses-building-blue-sky-appartments-87223.jpg" class="d-block w-100 topmargin-sm" alt="categoria4">
-              </label>
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-check topmargin-sm">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-              <label class="form-check-label" for="defaultCheck4">
-                <img src="../img/home-real-estate-106399.jpg" class="d-block w-100 topmargin-sm" alt="categoria4">
-              </label>
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-check topmargin-sm">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-              <label class="form-check-label" for="defaultCheck4">
-                <img src="../img/people-gathered-inside-house-sitting-on-sofa-1054974.jpg" class="d-block w-100 topmargin-sm" alt="categoria4">
-              </label>
-            </div>
-          </div>
-        </div>
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+<div class="container topmargin-sm">
+  <div class="row scroll-container">
+    <div class="col">
+      <div class="form-check topmargin-sm">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+          <img src="../img/appliances-architecture-ceiling-chairs-534151.jpg" class="d-block w-100 topmargin-sm" alt="categoria1">
+        </label>
       </div>
-    </section>
-    <button type="button" class="btn btn-primary btn-lg btn-block">Quiero estas</button>
-
+    </div>
+    <div class="col">
+      <div class="form-check topmargin-sm">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+        <label class="form-check-label" for="defaultCheck2">
+          <img src="../img/assorted-color-wall-paint-house-photo-1370704.jpg" class="d-block w-100 topmargin-sm" alt="categoria2">
+        </label>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-check topmargin-sm">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+        <label class="form-check-label" for="defaultCheck3">
+          <img src="../img/brown-wooden-center-table-584399.jpg" class="d-block w-100 topmargin-sm" alt="categoria3">
+        </label>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-check topmargin-sm">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+        <label class="form-check-label" for="defaultCheck4">
+          <img src="../img/houses-building-blue-sky-appartments-87223.jpg" class="d-block w-100 topmargin-sm" alt="categoria4">
+        </label>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-check topmargin-sm">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+        <label class="form-check-label" for="defaultCheck4">
+          <img src="../img/home-real-estate-106399.jpg" class="d-block w-100 topmargin-sm" alt="categoria4">
+        </label>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-check topmargin-sm">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+        <label class="form-check-label" for="defaultCheck4">
+          <img src="../img/people-gathered-inside-house-sitting-on-sofa-1054974.jpg" class="d-block w-100 topmargin-sm" alt="categoria4">
+        </label>
+      </div>
+    </div>
   </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </div>
+<button type="button" class="btn btn-primary btn-lg btn-block">Quiero estas</button>
+</div>
+  </div>
 </div>
 
 
