@@ -39,14 +39,13 @@
 
   <div class="container-without-margen">
     <div class="row">
-      <div class="col-3">
-        <section id="FILTROS">
+      <div class="col-3 bg-company">
+        <section id="FILTROS" >
         <!-- seccion de filtros -->
         <div class="btn-group topmargin-sm">
           <!-- menu desprendible ciudades -->
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            ciudad
-          </button>
+          <h6>Ciudad</h6>
+          <button type="button" class="btn btn-primary dropdown-toggle topmargin-sm " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-------------------</button>
           <div class="dropdown-menu dropdown-menu-right">
             <button class="dropdown-item" type="button">Medellin</button>
             <button class="dropdown-item" type="button">Bogota</button>
@@ -54,8 +53,8 @@
             <button class="dropdown-item" type="button">Cartagena</button>
           </div>
         </div>
-
 <!-- seccion de los rangos 6-nov -->
+<br>
 <h6>Tamaño del lugar</h6>
 <ng5-slider [(value)]="40" [(highValue)]="200" [options]="options"></ng5-slider>
 <!-- <div class="price-slider"><span>minimo
@@ -67,19 +66,17 @@
     <line x1="4" y1="0" x2="300" y2="0" stroke="212121" stroke-width="12" stroke-dasharray="1 28"></line>
   </svg>
 </div> -->
-
+<br>
 <h6>Rango de precio</h6>
   <ng5-slider [(value)]="0" [(highValue)]="250" [options]="options"></ng5-slider>
-
+<br>
 <!-- seccion de los rangos -->
-        <a class="btn btn-primary" href="#" role="button">Encuentra tu vivienda</a>
+        <button class="btn btn-primary" href="#" type="submit">Encuentra tu vivienda</button>
         </section>
       </div>
       <div class="col">
         <H2>Señala las que te gustan</H2>
-
-        <a class="btn btn-primary" href="#" role="button">Quiero estas</a>
-
+        <button class="btn btn-primary" href="#" type="button">Quiero estas</button>
       </div>
     </div>
   </div>

@@ -180,21 +180,27 @@ label img {
   max-width: 100%;
   min-width: 100px;
   height: 500px;
-  background: #0089CF;
   margin-top: 10px;
-  margin-left: 0px;
+  margin-left: 10px;
   margin-bottom: 10px;
 }
+h6{
+  color: #fff;
 
+}
 .container-without-margen {
   margin-left: 0px;
   margin-right: 0px;
 }
-.btn-group {
-  margin-left: 0px;
-  max-width: 40px;
+.row button {
+  margin-left: 10px;
+  max-width: 200px;
+  background-color:#F58220;
+  margin-left: 10px;
+
 }
-<!-- seccion de los rangos 6-nov -->
+
+
 /*
 
 input
