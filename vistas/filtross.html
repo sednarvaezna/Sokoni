@@ -37,90 +37,125 @@
     </nav>
   </header> <!-- fin  encabezado o barra de navegacion -->
 
-  <div class="container-without-margen">
+  <div class="container-without-margen topmargin-sm">
     <div class="row">
-      <div class="col-3">
-        <section id="FILTROS">
-        <!-- seccion de filtros -->
-        <div class="btn-group topmargin-sm">
-          <!-- menu desprendible ciudades -->
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            ciudad
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">Medellin</button>
-            <button class="dropdown-item" type="button">Bogota</button>
-            <button class="dropdown-item" type="button">Cali</button>
-            <button class="dropdown-item" type="button">Cartagena</button>
+      <div class="col-3 bg-company" id="FILTROS">
+          <!-- seccion de filtros -->
+          <div class="btn-group topmargin-sm">
+            <!-- menu desprendible ciudades -->
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ciudad
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" type="button">Medellin</button>
+              <button class="dropdown-item" type="button">Bogota</button>
+              <button class="dropdown-item" type="button">Cali</button>
+              <button class="dropdown-item" type="button">Cartagena</button>
+            </div>
+          </div>
+
+          <!-- seccion de los rangos 6-nov -->
+          <h6>Tamaño del lugar</h6>
+          <ng5-slider [(value)]="40" [(highValue)]="200" [options]="options"></ng5-slider>
+          <!-- <div class="price-slider"><span>minimo
+          <input type="number" value="5000" min="0" max="120000"> maximo
+          <input type="number" value="50000" min="0" max="120000"></span>
+          <input value="25000" min="0" max="120000" step="500" type="range"/>
+          <input value="50000" min="0" max="120000" step="500" type="range"/>
+          <svg width="100%" height="24">
+          <line x1="4" y1="0" x2="300" y2="0" stroke="212121" stroke-width="12" stroke-dasharray="1 28"></line>
+        </svg>
+      </div> -->
+
+      <h6>Rango de precio</h6>
+      <ng5-slider [(value)]="0" [(highValue)]="250" [options]="options"></ng5-slider>
+
+      <!-- seccion de los rangos -->
+      <button class="btn btn-primary" href="#" type="submit">Encuentra tu vivienda</button>
+  </div>
+  <div class="col">
+    <H2>Señala las que te gustan</H2>
+    <section>
+      <div class="container topmargin-sm">
+        <div class="row">
+          <div class="col">
+            <div class="form-check topmargin-sm">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                <img src="../img/appliances-architecture-ceiling-chairs-534151.jpg" class="d-block w-100 topmargin-sm" alt="categoria1">
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-check topmargin-sm">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                <img src="../img/assorted-color-wall-paint-house-photo-1370704.jpg" class="d-block w-100 topmargin-sm" alt="categoria2">
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-check topmargin-sm">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+              <label class="form-check-label" for="defaultCheck3">
+                <img src="../img/brown-wooden-center-table-584399.jpg" class="d-block w-100 topmargin-sm" alt="categoria3">
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-check topmargin-sm">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+              <label class="form-check-label" for="defaultCheck4">
+                <img src="../img/houses-building-blue-sky-appartments-87223.jpg" class="d-block w-100 topmargin-sm" alt="categoria4">
+              </label>
+            </div>
           </div>
         </div>
-
-<!-- seccion de los rangos 6-nov -->
-<h6>Tamaño del lugar</h6>
-<ng5-slider [(value)]="40" [(highValue)]="200" [options]="options"></ng5-slider>
-<!-- <div class="price-slider"><span>minimo
-  <input type="number" value="5000" min="0" max="120000"> maximo
-  <input type="number" value="50000" min="0" max="120000"></span>
-  <input value="25000" min="0" max="120000" step="500" type="range"/>
-  <input value="50000" min="0" max="120000" step="500" type="range"/>
-  <svg width="100%" height="24">
-    <line x1="4" y1="0" x2="300" y2="0" stroke="212121" stroke-width="12" stroke-dasharray="1 28"></line>
-  </svg>
-</div> -->
-
-<h6>Rango de precio</h6>
-  <ng5-slider [(value)]="0" [(highValue)]="250" [options]="options"></ng5-slider>
-
-<!-- seccion de los rangos -->
-        <a class="btn btn-primary" href="#" role="button">Encuentra tu vivienda</a>
-        </section>
       </div>
-      <div class="col">
-        <H2>Señala las que te gustan</H2>
+    </section>
+    <a class="btn btn-primary" href="#" role="button">Quiero estas</a>
 
-        <a class="btn btn-primary" href="#" role="button">Quiero estas</a>
-
-      </div>
-    </div>
   </div>
+</div>
+</div>
 
 
 <!--
-    <div class="container topmargin-sm">
-    <div id='id66' class="range">
-      <div id='id66b' class='range__between'></div>
-        <button id='id661' class="range__button_1"></button>
-        <button id='id662' class="range__button_2"></button>
-        <input id='id66i1' class='range_inpt1' type='number' min='20' max='700'>
-        <input id='id66i2' class='range_inpt2' type='number' min='20' max='700'>
-    </div>
+<div class="container topmargin-sm">
+<div id='id66' class="range">
+<div id='id66b' class='range__between'></div>
+<button id='id661' class="range__button_1"></button>
+<button id='id662' class="range__button_2"></button>
+<input id='id66i1' class='range_inpt1' type='number' min='20' max='700'>
+<input id='id66i2' class='range_inpt2' type='number' min='20' max='700'>
+</div>
 
-  </div>
+</div>
 <script type="text/javascript" src="../js/jstest.js" ></script> -->
 
 
 
-  <section id="footer" class="bg-company topmargin-sm">
-    <div class="container">
-      <img src="../img/LOGO-MYPLACE.svg" class="logo-brand" alt="logo">
-      <ul>
-        <li><p>Contactanos</p></li>
-        <li><a href=""> sokoni@sokoni.com.co </a></li>
-      </ul>
-      <ul class="list-inline">
-        <li class="list-inline-item footer-menu"><a href="#">Home</a></li>
-        <li class="list-inline-item footer-menu"><a href="#">Nosotros</a></li>
-      </ul>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-dribbble"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
-      </ul>
-      <small>©2019 All Rights Reserved. Created by MyPlace</small>
-    </div>
-  </section>
+<section id="footer" class="bg-company topmargin-sm">
+  <div class="container">
+    <img src="../img/LOGO-MYPLACE.svg" class="logo-brand" alt="logo">
+    <ul>
+      <li><p>Contactanos</p></li>
+      <li><a href=""> sokoni@sokoni.com.co </a></li>
+    </ul>
+    <ul class="list-inline">
+      <li class="list-inline-item footer-menu"><a href="#">Home</a></li>
+      <li class="list-inline-item footer-menu"><a href="#">Nosotros</a></li>
+    </ul>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+      <li class="list-inline-item"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+      <li class="list-inline-item"><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+      <li class="list-inline-item"><a href="#"><i class="icon ion-logo-dribbble"></i></a></li>
+      <li class="list-inline-item"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+    </ul>
+    <small>©2019 All Rights Reserved. Created by MyPlace</small>
+  </div>
+</section>
 
 </body>
 </html>
