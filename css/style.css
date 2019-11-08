@@ -160,9 +160,6 @@ label img {
   margin-right: 5%;
   margin-left: 900px; */
 }
-.row button {
-  background-color: orange;
-}
 #footer {
   padding: 80px 0;
   text-align: center;
@@ -195,12 +192,22 @@ label img {
 .container-without-margen {
   margin-left: 0px;
   margin-right: 0px;
+  /* max-height: 800px; */
 }
 .btn-group {
   margin-left: 0px;
   max-width: 40px;
 }
-<!-- seccion de los rangos 6-nov -->
+/* .row {
+  max-height: 800px;
+} */
+.row button {
+  background-color: orange;
+}
+.scroll-container {
+  overflow-y: scroll;
+  max-height: 800px;
+}
 /*
 
 input
