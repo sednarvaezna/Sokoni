@@ -12,7 +12,8 @@
     --DominioEmpresa: 'my-place.com.co';
     --ColorOscuroDegradado: #3069b3;
     --ColorClaroDegradado: #0089CF;
-    --ColorTextoMarca:#FFFFFF;
+    --ColorTexto:#FFFFFF;
+    --ColorTextoSeñalado:#F58220;
 }
 @font-face {
   font-family: "Avenir-Book";
@@ -62,8 +63,8 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
   min-height: 100px;
 }
-.nav-link {color: #ffffff; }
-.nav-link:hover {color: rgb(74, 68, 72); }
+.nav-link {color: var(--ColorTexto); }/*color standart de texto para vistas*/
+.nav-link:hover {color: var(--ColorTextoSeñalado); }/*color para cuando se selecciona el texto en la vistas*/
 .logo-brand {
   min-width: 160px;
   max-width: 180px;
