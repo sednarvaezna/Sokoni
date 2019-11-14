@@ -6,7 +6,6 @@
    Para utilizarlas se usa la funcion var() y entre
    los paréntesis se escribe el nombre de la variable
 */
-
 :root {
     --NombreEmpresa: 'My-Place';
     --DominioEmpresa: 'my-place.com.co';
@@ -46,11 +45,9 @@
   padding: 0px;
   letter-spacing: 1px;
 }
-
 .topmargin-xs{margin-top: 15px;}
 .topmargin-sm{margin-top: 30px;}
 .topmargin-lg{margin-top: 60px;}
-
 .rightmargin-sm{margin-right: 40px;}
 .bg-company {
   /* background-color: #2DC3E4 !important; */
@@ -82,20 +79,17 @@
   max-width: 100%;
   height: 600px;
 }
-
 .col img {
   border-radius: 2px;
   border: solid #000000 2px;
-  min-width: 300px;
-  min-height: 300px;
-  max-width: 600px;
-  max-height: 600px;
+  min-width: 180px;
+  min-height: 180px;
+  max-width: 500;
+  max-height: 500px;
 }
 .form-check-input {
   display: none;
 }
-
-
 label {
   border: 1px solid #fff;
   padding: 10px;
@@ -110,7 +104,6 @@ label {
   -ms-user-select: none;
   user-select: none;
 }
-
 label::before {
   background-color: white;
   color: white;
@@ -128,24 +121,20 @@ label::before {
   transition-duration: 0.4s;
   transform: scale(0);
 }
-
 label img {
   height: 100px;
   width: 100px;
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
 }
-
 :checked+label {
   border-color: rgb(36, 221, 49);
 }
-
 :checked+label::before {
   content: "✓";
   background-color: green;
   transform: scale(1);
 }
-
 :checked+label img {
   transform: scale(0.9);
   box-shadow: 0 0 5px #333;
@@ -161,7 +150,7 @@ label img {
   margin-left: 900px; */
 }
 #footer {
-  padding: 80px 0;
+  padding: 40px 0;
   text-align: center;
   color: #ffffff;
 }
@@ -174,10 +163,7 @@ label img {
 #footer .list-inline .list-inline-item {
   padding: 10px 15px;
 }
-
 /* Estilos de la vista filtros */
-
-
 #FILTROS {
   display: flex;
   flex-direction: column;
@@ -190,7 +176,7 @@ label img {
 }
 h6{
   color: #fff;
-
+  text-align: center;
 }
 .container-without-margen {
   margin-left: 0px;
@@ -198,21 +184,61 @@ h6{
   /* max-height: 800px; */
 }
 .row btn {
-  margin-left: 10px;
+  margin-right: 10px;
   max-width: 200px;
   background-color:#F58220;
   margin-left: 10px;
-
 }
-
 .row button {
   background-color: #F58220;
 }
 .scroll-container {
   overflow-y: scroll;
-  max-height: 800px;
-}/*
+  max-height: 1000px;
+}
+.topmargin-sm {
+  border: 8px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.btn-group{
+  margin-left: 0px;
+}
+.btnq{
+  margin-bottom: 5px;
+}
+.bg-company{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+#casas{
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 input
 {
   box-shadow: 0;
